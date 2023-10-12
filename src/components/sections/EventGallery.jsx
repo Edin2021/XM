@@ -17,10 +17,14 @@ function EventGallery() {
         <FontAwesomeIcon
           icon={faChevronLeft}
           className="event-gallery__arrow--left"
+          role="button"
+          tabindex="0"
         />
         <FontAwesomeIcon
           icon={faChevronRight}
           className="event-gallery__arrow--right"
+          role="button"
+          tabindex="0"
         />
       </div>
     </section>

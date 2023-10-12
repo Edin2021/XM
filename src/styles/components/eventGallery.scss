@@ -39,6 +39,7 @@
     line-height: 39px;
     color: $text-10;
     position: absolute;
+    cursor: pointer;
   }
   &__arrow--left {
     transform: translateX(-100%);

@@ -15,33 +15,35 @@ function Banner() {
   return (
     <div className="banner__wrapper">
       <section className="banner">
-        <div className="banner__subtext">TRADE WITH</div>
-        <h1 className="banner__title">
-          <b>Zero Swaps</b> on All XM Ultra Low Accounts for more than 25
-          instruments!
-        </h1>
-        <p className="banner__text">
-          Enjoy spreads as <b>low as 0.6 pips</b> and{" "}
-          <b>leverage up to 1000:1</b> on instruments like{" "}
-          <b>EURUSD, USDJPY, EURJPY, GBPUSD,</b> and <b>Gold.</b>
-        </p>
-        <button className="banner__account--button">OPEN ACCOUNT</button>
-        <p className="banner__demo">
-          New to trading? Try a{" "}
-          <a href="#demo" className="banner__demo--link">
-            Demo account.
-          </a>
-        </p>
-        <p className="banner__terms--conditions">
-          Terms and Conditions apply <span>*</span>. To read the full T&Cs,
-          click{" "}
-          <a
-            href="#terms-and-conditions"
-            className="banner__terms--conditions--link"
-          >
-            here.
-          </a>
-        </p>
+        <div className="banner__wrapper--inner">
+          <div className="banner__subtext">TRADE WITH</div>
+          <h1 className="banner__title">
+            <b>Zero Swaps</b> on All XM Ultra Low Accounts for more than 25
+            instruments!
+          </h1>
+          <p className="banner__text">
+            Enjoy spreads as <b>low as 0.6 pips</b> and{" "}
+            <b>leverage up to 1000:1</b> on instruments like{" "}
+            <b>EURUSD, USDJPY, EURJPY, GBPUSD,</b> and <b>Gold.</b>
+          </p>
+          <button className="banner__account--button">OPEN ACCOUNT</button>
+          <p className="banner__demo">
+            New to trading? Try a{" "}
+            <a href="#demo" className="banner__demo--link">
+              Demo account.
+            </a>
+          </p>
+          <p className="banner__terms--conditions">
+            Terms and Conditions apply <span>*</span>. To read the full T&Cs,
+            click{" "}
+            <a
+              href="#terms-and-conditions"
+              className="banner__terms--conditions--link"
+            >
+              here.
+            </a>
+          </p>
+        </div>
         <div className="banner__general--swap">
           <img
             src={generalSwapMobile}

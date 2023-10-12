@@ -10,9 +10,12 @@
 
 .banner {
   padding: 84px 6px;
-  @include center(column);
   position: relative;
-
+  &__wrapper--inner {
+    z-index: 1;
+    position: relative;
+    @include center(column);
+  }
   &__intersect {
     position: absolute;
     left: 0;
