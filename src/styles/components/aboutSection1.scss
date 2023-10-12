@@ -30,7 +30,6 @@
     color: $text-1;
     font-weight: 300;
     text-align: center;
-    text-wrap: balance;
     max-width: 165px;
     z-index: 1;
     b {
@@ -119,7 +118,6 @@
       }
     }
     &__title {
-      text-wrap: balance;
       max-width: 100%;
 
       b {
@@ -127,7 +125,6 @@
       }
     }
     &__text {
-      text-wrap: balance;
       line-height: 22px;
     }
     &__card {
@@ -175,7 +172,7 @@
         font-size: 35px;
       }
       &__text {
-        text-wrap: balance;
+        max-width: 700px;
         margin-bottom: 32px;
       }
       &__card--grid {

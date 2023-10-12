@@ -79,7 +79,6 @@
     font-weight: 400;
     color: $text-1;
     max-width: 620px;
-    text-wrap: balance;
   }
   &__text {
     font-size: 14px;
@@ -88,7 +87,6 @@
     color: $text-1;
     margin: 30px 0;
     max-width: 460px;
-    text-wrap: balance;
   }
   // DEFAULT BUTTON
   &__account--button {
@@ -114,7 +112,7 @@
   &__demo {
     font-size: 14px;
     line-height: 14px;
-    font-weight: 400px;
+    font-weight: 400;
     color: $text-1;
     margin-top: 15px;
     margin-bottom: 15px;
