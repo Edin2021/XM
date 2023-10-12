@@ -2,6 +2,8 @@
 
 .crypto-info-cards {
   margin-bottom: 70px;
+  position: relative;
+  z-index: 2;
   &__wrapper {
     display: flex;
     flex-wrap: wrap;

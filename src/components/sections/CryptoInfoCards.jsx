@@ -60,7 +60,7 @@ function CryptoInfoCards() {
             </div>
             <div
               className={`crypto-info-cards__percent--change ${
-                crypto.percent_change_24h > 1 ? " positive" : "negative"
+                isNumPositive(crypto.percent_change_24h) ? " positive" : "negative"
               }`}
               aria-label="percent change"
             >
