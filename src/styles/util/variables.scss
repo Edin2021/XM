@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;700;800;900&display=swap");
+
+// breakpoints (min-width)
+$bp-desktop: 1200px;
+$bp-tablet: 768px;
+$bp-mobile: 320px;
+
+// fonts
+$font-roboto: "Roboto", sans-serif;
+$font-bebas-neue: "Bebas Neue", sans-serif;
+
+// font sizes and line height
+// desktop:
+// font-sizes - 8.59, 12, 13.35 14, 15, 16, 17, 19, 19.08. 24, 25, 30, 34, 35, 80
+// line-heights - 10.3, 14, 15.67, 16, 16.41, 17.14, 17.58, 18, 21, 22, 22.89, 23.88, 24, 24.84, 26, 27.46, 28.13, 30, 38, 39, 39.5, 42, 90
+// letter-spacings - 1, -2%
+
+// tablet:
+// font-sizes - 7.84, 11, 12, 12.2, 12.89, 14, 15, 16, 17.43, 19.77, 24, 25, 28, 30, 32, 34, 41.88
+// line-heights - 9.41, 14, 14.64, 15.67, 16.41, 18, 19.75, 21, 22, 23.39, 26, 30, 35, 27.46, 38, 39, 39.5, 42.62, 48.26
+// letter-spacings - 1, -2%
+
+// mobile:
+// font-sizes - 7.84, 12, 12.2, 14, 15, 16, 17.43, 20, 24, 28, 32, 35
+// line-heights - 9.41, 14, 14.64, 15.67, 16.41, 17.14, 18, 20, 21, 22, 24, 25, 26, 27.5, 30, 38, 39, 39.5, 43, 48.26
+// letter-spacings - 1, -2%
+
+// $text-4xs: 9px;
+// $text-3xs: 10px;
+// $text-2xs: 11px;
+// $text-xs: 12px;
+// $text-sm: 14px;
+// $text-rg: 16px;
+// $text-normal: 18px;
+// $text-md: 20px;
+// $text-lg: 24px;
+// $text-banner: 100px;
+
+// other variables
+$container-desktop: clamp(200px, 95%, 1200px);
+$container-tablet: clamp(200px, 95%, 768px);
+$container-mobile: clamp(200px, 95%, 320px);
+
+$radius-xs: 3.5px;
+$radius-sm: 10px;
+$radius-rg: 14px;
+$rounded: 1000rem;
+
+// colors
+$bg-1: #201d27;
+$bg-2: #ffffff;
+$bg-3: #0b0819;
+$bg-4: #f4f4f4;
+$bg-5: #000000;
+$bg-6: #fff8d6;
+$bg-7: #dadada;
+$bg-8: rgba(140, 140, 140, 0.1);
+$bg-9: rgba(167, 167, 167, 0.2);
+$bg-10: #F7F7F7;
+$bg-11: #dddddd;
+$bg-12: #cccccc;
+
+$text-1: #ffffff;
+$text-2: #dddddd;
+$text-3: #000000;
+$text-4: #efefef;
+$text-5: #444444;
+$text-6: #888888;
+$text-7: #ccb494;
+$text-8: #E3E3E3;
+$text-9: #B1B1B1;
+$text-10: #959595;
+$text-11: #CCCCCC;
+$text-12: #BDBDBD;
+$text-13: #252525;
+
+$accent-1: #29a643;
+$accent-2: #d51820;
+
+$danger-1: #ffa3a6;
+$danger-2: #d51820;
+
+$success-1: #b1ffc2;
+$success-2: #f3fef4;
+$success-3: #31b63b;
+$success-4: #29a643;
+$success-5: #3c763d;
+
+
+$border-1: #32aa43;
+$border-2: #31b63b;
+$border-3: #cdcdcd;
+$border-4: #A9A9A9;
+$border-5: rgba(167, 167, 167, 0.2);
+$border-6: #444444;
+
+$bg-gradient-1: linear-gradient(
+  180deg,
+  rgba(32, 46, 71, 0.65) 36.53%,
+  rgba(32, 46, 71, 0.6175) 57.69%,
+  rgba(32, 46, 71, 0.585) 78.84%,
+  rgba(32, 46, 71, 0) 100%
+);

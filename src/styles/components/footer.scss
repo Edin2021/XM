@@ -1,0 +1,94 @@
+@use "../util" as *;
+
+.footer {
+    background: $bg-5;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    &__center {
+        width: $container-mobile;
+        padding: 0px 15px;
+    }
+    &__upper--wrapper {
+        border-bottom: 1px solid $border-6;
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 40px;
+    }
+    &__lower--wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        gap: 24px;
+    }
+    &__companies {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+        &--company-logo {
+            max-width: 130px;
+            max-height: 35px;
+        }
+    }
+    &__social--media {
+       font-size: 12px;
+       line-height: 17px;
+       font-weight: 400;
+       color: $text-6;
+       display: flex;
+       align-items: center;
+       gap: 15px;
+       &-link {
+        font-size: 18px;
+        line-height: 20px;
+        color: $text-12;
+       }
+    }
+    &__privacy--policy {
+        font-size: 12px;
+        line-height: 20px;
+        color: $text-6;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+        &-link {
+            color: $text-6;
+        }
+    }
+    &__logo {
+        width: 180px;
+    }
+}
+
+@media screen and (min-width: $bp-tablet) {
+    .footer {
+        &__center {
+            width: $container-tablet;
+            padding: 0 30px;
+        }
+        &__lower--wrapper {
+            padding-bottom: 52px;
+            flex-direction: row;
+        }
+    }
+}
+
+@media screen and (min-width: $bp-desktop) {
+    .footer {
+        &__center {
+            width: $container-desktop;
+            padding-top: 50px;
+        }
+        &__upper--wrapper {
+            display: flex;
+        }
+        &__lower--wrapper {
+            padding-top: 30px;
+        }
+    }
+}

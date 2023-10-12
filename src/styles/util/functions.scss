@@ -1,0 +1,12 @@
+@use "variables" as *;
+
+@mixin transition($type) {
+  transition: $type 0.3s ease;
+}
+
+@mixin center($flow) {
+  display: flex;
+  flex-direction: $flow;
+  justify-content: center;
+  align-items: center;
+}

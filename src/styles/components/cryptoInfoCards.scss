@@ -1,0 +1,134 @@
+@use "../util" as *;
+
+.crypto-info-cards {
+  margin-bottom: 70px;
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 33px;
+    padding: 0px 40px;
+  }
+  &__card {
+    background: $bg-8;
+    padding: 12px 15px;
+    padding-bottom: 17px;
+    border: 1px solid $border-5;
+    border-radius: $radius-rg;
+    max-width: 235px; 
+      width: 100%;
+  }
+  &__title--wrapper {
+   display: flex;
+   align-items: center;
+  }
+  &__icon {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+  }
+  &__title {
+    font-size: 12.5px;
+    line-height: 14.5px;
+    font-weight: 500;
+    color: $text-1;
+    display: flex;
+    align-items: center;
+  }
+  &__currency {
+    font-size: 8px;
+    line-height: 9.5px;
+    font-weight: 500;
+    color: $text-3;
+    background: $bg-6;
+    border-radius: $radius-xs;
+    width: max-content;
+    padding: 2px 7px;
+    padding-right: 11px;
+    margin-left: 10px;
+  }
+  &__separator {
+    width: 100%;
+    height: 1px;
+    background: $bg-2;
+    opacity: 0.15;
+    margin-top: 14px;
+    margin-bottom: 17px;
+  }
+  &__price {
+    font-size: 17.5px;
+    line-height: 21px;
+    font-weight: 700;
+    color: $text-1;
+    margin-bottom: 8px;
+  }
+  &__percent--change {
+    font-size: 12.5px;
+    line-height: 14.5px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    &-icon {
+      font-size: 8px;
+      margin-right: 4px;
+    }
+    &.positive {
+      color: $success-1;
+    }
+    &.negative {
+      color: $danger-1;
+    }
+  }
+  
+}
+
+@media screen and (min-width: $bp-tablet) {
+  .crypto-info-cards {
+    &__wrapper {
+      justify-content: center;
+      column-gap: 17.5px;
+      row-gap: 42px;
+      padding: 0px;
+    }
+    &__card {
+      padding: 11px 14px;
+      padding-bottom: 15px;
+      width: 210px;
+    }
+    &__icon {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+    &__currency {
+      margin-left: 8px;
+      padding: 2px 5px;
+    }
+    &__separator {
+      margin-top: 15px;
+      margin-bottom: 12.5px;
+    }
+    &__price {
+      margin-bottom: 7px;
+    }
+  }
+}
+
+@media screen and (min-width: $bp-desktop) {
+  .crypto-info-cards {
+    margin-bottom: 90px;
+    &__card {
+      padding: 11px 14px;
+      padding-bottom: 15px;
+      width: 200px;
+    }
+    &__icon {
+      width: 34px;
+      height: 34px;
+      margin-right: 7.5px;
+    }
+    &__separator {
+      margin-top: 19px;
+      margin-bottom: 13px;
+    }
+  }
+}

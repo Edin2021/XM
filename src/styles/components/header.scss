@@ -1,0 +1,52 @@
+@use "../util" as *;
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;;
+    background: $bg-5;
+    padding-left: 30px;
+    padding-right: 50px;
+    &__center {
+       width: $container-mobile;
+       display: flex;
+       justify-content: center;
+    }
+    &__logo {
+        margin: 22px 0;
+    }
+    &__nav {
+        display: none;
+    }
+    &__link {
+        color: $text-1;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 17.5px;
+    }
+}
+
+@media screen and (min-width: $bp-tablet) {
+    .header {
+        &__center {
+            width: $container-tablet;
+        }
+    }
+}
+
+@media screen and (min-width: $bp-desktop) {
+    .header {
+        &__center {
+            width: $container-desktop;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__logo {
+            margin: 32px 0;
+        }
+        &__nav {
+            display: flex;
+            gap: 40px;
+        }
+    }
+}

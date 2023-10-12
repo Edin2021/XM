@@ -1,0 +1,135 @@
+@use "../util" as *;
+
+.about-section2 {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   width: 100%;
+   margin-bottom: 70px;
+   padding: 0 15px;
+   &__title--wrapper {
+    margin-bottom: 65px;
+   }
+  &__separator {
+    width: 40px;
+    height: 4px;
+    background: $accent-2;
+    margin: 0 auto;
+    margin-bottom: 22px;
+  }
+  &__title {
+    font-size: 35px;
+    line-height: 48px;
+    color: $text-5;
+    font-weight: 900;
+    margin-bottom: 23px;
+    span {
+        color: $accent-2;
+    }
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 21px;
+    color: $text-5;
+    font-weight: 400;
+  }
+  &__tile--grid {
+    text-align: center;
+  }
+  &__tile {
+    margin-bottom: 47px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+    &--icon {
+      width: 45px;
+      margin-bottom: 18px;
+    }
+    &--title {
+      font-size: 20px;
+      line-height: 23.5px;
+      font-weight: 700;
+      color: $text-5;
+      margin-bottom: 15px;
+    }
+    &--text {
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 400;
+      color: $text-5;
+    }
+  }
+}
+
+@media screen and (min-width: $bp-tablet) {
+  .about-section2 {
+    margin-bottom: 77px;
+    &__title--wrapper {
+     margin-bottom: 53px;
+    }
+
+    &__title {
+      font-size: 42px;
+    }
+   &__separator {
+     margin-bottom: 25px;
+   }
+   &__tile--grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 58px;
+    column-gap: 130px;
+    padding: 0 85px;
+  }
+  &__tile {
+    margin-bottom: 0;
+    text-align: start;
+    }
+  }
+}
+
+
+
+
+
+
+
+@media screen and (min-width: $bp-desktop) {
+  .about-section2 {
+    margin-bottom: 90px;
+    flex-direction: row;
+    justify-content: flex-start;
+    &__title--wrapper {
+     margin-bottom: 55px;
+    }
+
+    &__title {
+      font-size: 80px;
+      line-height: 90px;
+    }
+    &__tile--grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 58px;
+    column-gap: 130px;
+    padding: 0 85px;
+    padding-left: 120px !important;
+  }
+   &__separator {
+    width: 72px;
+     margin-bottom: 40px;
+     margin-left: 0;
+   }
+   &__tile--grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 85px;
+    column-gap: 175px;
+    padding: 0 85px;
+  }
+   &__title--wrapper {
+    text-align: start;
+   }
+  }
+}
