@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck, faCaretRight } from "@fortawesome/free-solid-svg-icons";
@@ -119,12 +120,12 @@ function UserForm() {
 
   useEffect(() => {
     if (step1.active && isFullNameValid && isDateOfBirthValid === "valid") {
-      setStep1({ ...step1, progress: 50 });
+      setStep1(({ ...step1, progress: 50 }));
     } else if (
       step1.active &&
       (!isFullNameValid || isDateOfBirthValid !== "valid")
     ) {
-      setStep1({ ...step1, progress: 0 });
+      setStep1(({ ...step1, progress: 0 }));
     }
 
     if (
@@ -139,7 +140,7 @@ function UserForm() {
     ) {
       setStep2({ ...step2, progress: 0 });
     }
-  }, [fullName, dateOfBirth, email, password]);
+  }, [isFullNameValid, isDateOfBirthValid, isEmailValid, isPasswordValid]);
 
   return (
     <div className="user-form">
