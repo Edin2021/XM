@@ -97,6 +97,11 @@
         border: 1px solid $success-4;
         background: $bg-2;
       }
+      &[type='date'] {
+      width: 100%;
+      height: 39px;
+      -webkit-min-logical-width: calc(100% - 16px);
+      }
     }
     &:last-of-type {
       margin-bottom: 30px;
