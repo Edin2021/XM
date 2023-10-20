@@ -15,6 +15,13 @@ function AboutSection2() {
         </p>
       </div>
       <div className="about-section2__tile--grid">
+        <div className="about-section2__bg--cross">
+          <div className="about-section2__bg--cross-hl1"></div>
+          <div className="about-section2__bg--cross-hl2"></div>
+          <div className="about-section2__bg--cross-vl1"></div>
+          <div className="about-section2__bg--cross-vl2"></div>
+          <div className="about-section2__bg--cross-dot"></div>
+        </div>
         <article className="about-section2__tile">
           <img
             src={loadIcon["frame1"]}
