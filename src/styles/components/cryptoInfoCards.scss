@@ -4,11 +4,20 @@
   margin-bottom: 70px;
   position: relative;
   z-index: 2;
+  &__zero--mobile {
+    width: 150px;
+    position: absolute;
+    top: -80px;
+    right: -70px;
+    z-index: 1;
+  }
   &__wrapper {
     display: flex;
     flex-wrap: wrap;
     gap: 33px;
     padding: 0px 40px;
+    z-index: 2;
+    position: relative;
   }
   &__card {
     background: $bg-8;
@@ -86,6 +95,9 @@
 
 @media screen and (min-width: $bp-tablet) {
   .crypto-info-cards {
+    &__zero--mobile {
+      display: none;
+    }
     &__wrapper {
       justify-content: center;
       column-gap: 17.5px;

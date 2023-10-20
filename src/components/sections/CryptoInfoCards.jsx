@@ -6,33 +6,32 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { loadIcon } from "../../composables/iconLoader";
 import { removeFirstChar, isNumPositive } from "../../helpers/utils";
-
+import zeroMobile from "../../assets/images/mobile/zero-mobile-bigger-tinted-1.png";
 
 function CryptoInfoCards() {
   const [cryptos, setCryptos] = useState([]);
 
   const apiUrl = "https://api.coinlore.net/api/tickers/";
-
+  const getCryptoData = async () => {
+    try {
+      const response = await fetch(apiUrl);
+      const result = await response.json();
+      const cryptoToDisplay = ["BTC", "ETH", "XRP", "LTC", "BCH"];
+      let filteredCryptoData = result.data.filter((item) =>
+        cryptoToDisplay.includes(item.symbol)
+      );
+      setCryptos([...filteredCryptoData]);
+    } catch (err) {
+      console.log(err);
+    }
+  };
   useEffect(() => {
-    const getCryptoData = async () => {
-      try {
-        const response = await fetch(apiUrl);
-        const result = await response.json();
-        const cryptoToDisplay = ["BTC", "ETH", "XRP", "LTC", "BCH"];
-        let filteredCryptoData = result.data.filter((item) =>
-          cryptoToDisplay.includes(item.symbol)
-        );
-        setCryptos([...filteredCryptoData]);
-      } catch (err) {
-        console.log(err);
-      }
-    };
-
     getCryptoData();
   }, []);
 
   return (
     <section className="crypto-info-cards">
+      <img src={zeroMobile} alt="" className="crypto-info-cards__zero--mobile"/>
       <h2 className="visually-hidden">Crypto currency charts</h2>
 
       <div className="crypto-info-cards__wrapper">
@@ -60,7 +59,9 @@ function CryptoInfoCards() {
             </div>
             <div
               className={`crypto-info-cards__percent--change ${
-                isNumPositive(crypto.percent_change_24h) ? " positive" : "negative"
+                isNumPositive(crypto.percent_change_24h)
+                  ? " positive"
+                  : "negative"
               }`}
               aria-label="percent change"
             >
